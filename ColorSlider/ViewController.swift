@@ -43,11 +43,11 @@ class ViewController: UIViewController {
     
     
     @IBAction func redSwitchChanged(_ sender: UISwitch) {
-        let redSwitchOn = sender.isOn
-        if redSwitchOn {
+        if sender.isOn {
             redSlider.isEnabled = true
         } else {
             redSlider.isEnabled = false
+            redSlider.value = 0
         }
     }
     
@@ -56,6 +56,7 @@ class ViewController: UIViewController {
             blueSlider.isEnabled = true
         } else {
             blueSlider.isEnabled = false
+            blueSlider.value = 0
         }
     }
     
@@ -64,6 +65,7 @@ class ViewController: UIViewController {
             greenSlider.isEnabled = true
         } else {
             greenSlider.isEnabled = false
+            greenSlider.value = 0
         }
     }
     
